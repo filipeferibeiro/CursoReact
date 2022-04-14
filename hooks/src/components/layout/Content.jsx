@@ -16,16 +16,36 @@ import UseCustom from '../../views/examples/UseCustom'
 const Content = props => (
     <main className="Content">
         <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/useState" component={UseState} />
-            <Route path="/useEffect" component={UseEffect} />
-            <Route path="/useRef" component={UseRef} />
-            <Route path="/useCallback" component={UseCallback} />
-            <Route path="/useMemo" component={UseMemo} />
-            <Route path="/useContext" component={UseContext} />
-            <Route path="/useReducer" component={UseReducer} />
-            <Route path="/useCustom" component={UseCustom} />
-            <Route path="*" component={NotFound} />
+            <Route exact path="/">
+                <Home />
+            </Route>
+            <Route path="/useState">
+                <UseState />
+            </Route>
+            <Route path="/useEffect">
+                <UseEffect />
+            </Route>
+            <Route path="/useRef">
+                <UseRef />
+            </Route>
+            <Route path="/useCallback">
+                <UseCallback />
+            </Route>
+            <Route path="/useMemo">
+                <UseMemo />
+            </Route>
+            <Route path="/useContext">
+                <UseContext />
+            </Route>
+            <Route path="/useReducer">
+                <UseReducer />
+            </Route>
+            <Route path="/useCustom">
+                <UseCustom />
+            </Route>
+            <Route path="*">
+                <NotFound />
+            </Route>
         </Switch>
     </main>
 )

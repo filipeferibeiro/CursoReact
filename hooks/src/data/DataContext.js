@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 export const data = {
-    number: 123,
-    text: 'Context API...'
-}
+	number: 123,
+	text: "Context API...",
+};
 
 export const DataContext = React.createContext(data);
